@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title><link rel="stylesheet" href="usta.css">
+    </head>
+<body class="usta">
+<input id="email"><input id="password" type="password">
+<button onclick="giris()">Giriş</button>
+<p id="mesaj"></p>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="firebase.js"></script>
+<script>
+function giris(){
+ firebase.auth().signInWithEmailAndPassword(email.value,password.value)
+ .then(()=>location.href="usta-panel.html")
+ .catch(e=>mesaj.innerText=e.message);
+}
+</script>
+</body></html>

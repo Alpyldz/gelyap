@@ -1,0 +1,60 @@
+/* SAYFA GENEL */
+.usta {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 15px;
+}
+
+/* WRAP */
+.usta .wrap {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* BAŞLIK */
+.usta h2 {
+  margin-bottom: 15px;
+}
+
+/* BUTONLAR */
+.usta button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.usta button:first-child {
+  background: #2ecc71; /* online */
+}
+
+.usta button:last-child {
+  background: #e74c3c; /* offline */
+}
+
+/* TOOLBAR */
+.usta .toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* CARD */
+.usta .card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+.usta .card h3 {
+  margin: 0 0 5px;
+}
+
+.usta .card p {
+  margin: 3px 0;
+}
