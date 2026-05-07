@@ -4,7 +4,7 @@ const twilio=require("twilio");
 const app=express();
 app.use(bodyParser.json());
 const client=twilio("ACCOUNT_SID","AUTH_TOKEN");
-app.post("/mesaj",async(req,res)=>{
+app.post("/webhook",async(req,res)=>{
  const {telefon,mesaj}=req.body;
  await client.messages.create({
   from:"whatsapp:+14155238886",
