@@ -3,7 +3,7 @@ const bodyParser=require("body-parser");
 const twilio=require("twilio");
 const app=express();
 app.use(bodyParser.json());
-const client=twilio("ACCOUNT_SID","AUTH_TOKEN");
+const client = twilio(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 app.post("/webhook",async(req,res)=>{
  const {telefon,mesaj}=req.body;
  await client.messages.create({
